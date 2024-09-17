@@ -8,41 +8,41 @@
 </head>
 <body>
 
-<!--landing page-->
-<div id="landing-page">
-    <h1>Create a Blog Post</h1>
-    <form id="blog-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <h1>Create a Blog Post</h1>
+        <form id="blog-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
 
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" required>
 
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" rows="4" required></textarea>
+            <label for="content">Blog Content:</label>
+            <textarea id="content" rows="5" required></textarea>
 
-        <button type="submit">Submit</button>
-    </form>
+            <button type="submit">Submit Post</button>
+        </form>
         <p id="error-message" class="error"></p>
-</body>
+    </div>
 
-<!--posts page-->
-<div id="posts-page" class="hidden">
-       <header>
-        <h1>Blog Posts</h1>
-        <button id="back-button">Back</button>
-        <label class="toggle-label">
-            <input type="checkbox" id="dark-mode-toggle">
-            Dark Mode
-        </label>
+    <!-- Posts Page -->
+    <div id="posts-page" class="hidden">
+        <header>
+            <h1>Blog Posts</h1>
+            <button id="back-button">Back</button>
+            <label class="toggle-label">
+                <input type="checkbox" id="dark-mode-toggle">
+                Dark Mode
+            </label>
         </header>
 
         <div id="posts-container"></div>
         <footer>
-            <p> Developed by Shawn Perez</p>
+            <p>Developed by <a href="https://your-portfolio-link.com" target="_blank">Your Name</a></p>
         </footer>
-</div>
+    </div>
 
-<script src="assets/JS/blog.js"></script>
+    <script src="assets/JS/blog.js"></script>
 </body>
 </html>
